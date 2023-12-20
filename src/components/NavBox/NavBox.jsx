@@ -8,6 +8,7 @@ const NavBox = () => {
 
     return ( 
         <div className='nav-box'>
+            <div className='nav-box-content'>
             <IconWithText
                 icon = {home_svg}
                 text = 'Home'
@@ -16,6 +17,8 @@ const NavBox = () => {
                 icon = {search_svg}
                 text = 'Search'
             />
+            </div>
+            
         </div>
      );
 }
