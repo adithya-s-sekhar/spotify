@@ -27,5 +27,3 @@ const icon_svg = props.icon;
         </div>
      );
 }
- 
-export default Icon;
