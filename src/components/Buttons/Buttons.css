@@ -5,23 +5,49 @@
     cursor: pointer;
 }
 
-.icon-svg{
+.icon-with-text-svg{
     width: 24px;
     height: 24px;
 }
 
-.icon-svg svg{
+.icon-with-text-svg svg{
     fill: #fff;
 }
 
-.icon-text{
+.icon-with-text-text{
     font-size: 1rem;
     color: #a7a7a7;
     font-weight: 700;
 }
 
-.icon-text:hover{
+.icon-with-text-text:hover{
     color: #fff;
     fill: #fff;
 
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-svg{
+    width: 16px;
+    height: 16px;
+}
+
+.icon:hover{
+    background-color: #000;
+}
+
+.icon-svg svg{
+    fill: #a7a7a7;
+}
+
+.icon-svg svg:hover{
+    fill: #fff;
 }

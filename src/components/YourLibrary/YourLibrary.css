@@ -2,7 +2,6 @@
     grid-area: your-library;
     background-color: #121212;
     border-radius: 8px;
-    width: 17rem;
     padding: 20px 30px;
 }
 
@@ -10,4 +9,10 @@
     display: flex;
     justify-content: space-between;
     color: #a7a7a7;
+    align-items: center;
+}
+
+.your-library-header-icons{
+    display: flex;
+    gap: 1rem;
 }

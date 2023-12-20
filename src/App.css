@@ -1,7 +1,7 @@
 .app-wrapper{
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: 23rem 1fr 1fr;
     grid-template-areas: 
     "nav-box main main" 
     "your-library main main" 
@@ -10,6 +10,7 @@
     padding: 10px;
 }
 
+/* Remove this after content takes space */
 div{
     text-align: center;
     color: #fff;
