@@ -1,4 +1,5 @@
-import { IconWithText, Icon } from '../Buttons/Buttons';
+import { IconWithText, Icon, Button } from '../Buttons/Buttons';
+import YourLibraryCard from '../YourLibraryCard/YourLibraryCard';
 import './YourLibrary.css';
 
 const YourLibrary = () => {
@@ -25,6 +26,22 @@ const YourLibrary = () => {
                         icon = {arrow_svg}
                     />
                 </div>
+            </div>
+            <div className='your-library-content'>
+                <YourLibraryCard
+                    heading = 'Create your first playlist'
+                    text = 'It&apos;s easy, we&apos;ll help you'
+                    action = {<Button
+                                text = 'Create playlist'
+                            />}
+                />
+                <YourLibraryCard
+                    heading = 'Let&apos;s find some podcasts to follow'
+                    text = 'We&apos;ll keep you updated on new episodes'
+                    action = {<Button
+                                text = 'Browse podcasts'
+                            />}
+                />
             </div>
         </div>
      );
