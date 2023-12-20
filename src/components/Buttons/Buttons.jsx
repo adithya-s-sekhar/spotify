@@ -27,3 +27,15 @@ const icon_svg = props.icon;
         </div>
      );
 }
+
+export const Button = (props) => {
+    const text = props.text;
+
+    return ( 
+        <div className='button'>
+            <div className='button-text'>
+                {text}
+            </div>
+        </div>
+     );
+}
