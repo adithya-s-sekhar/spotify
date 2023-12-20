@@ -1,0 +1,31 @@
+.your-library-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #242424;
+    border-radius: 8px;
+    gap: 20px;
+    padding: 8px;
+}
+
+.your-library-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 8px;
+}
+
+.your-library-card-text-heading{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.your-library-card-text-text{
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.your-library-card-action{
+    padding: 8px;
+}
