@@ -1,4 +1,4 @@
-import Icon, { IconWithText } from '../Buttons/Buttons';
+import { IconWithText, Icon } from '../Buttons/Buttons';
 import './YourLibrary.css';
 
 const YourLibrary = () => {
