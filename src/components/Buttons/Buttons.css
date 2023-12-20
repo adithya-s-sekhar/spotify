@@ -1,0 +1,27 @@
+.icon-with-text{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-svg{
+    width: 24px;
+    height: 24px;
+}
+
+.icon-svg svg{
+    fill: #fff;
+}
+
+.icon-text{
+    font-size: 1rem;
+    color: #a7a7a7;
+    font-weight: 700;
+}
+
+.icon-text:hover{
+    color: #fff;
+    fill: #fff;
+
+}

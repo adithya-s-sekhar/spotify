@@ -2,6 +2,9 @@
     grid-area: nav-box;
     background-color: #121212;
     border-radius: 8px;
-    width: 200px;
-    height: 100px;
+    width: 17rem;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
