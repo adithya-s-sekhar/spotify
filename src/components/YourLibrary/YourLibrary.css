@@ -1,0 +1,7 @@
+.your-library{
+    grid-area: your-library;
+    background-color: #121212;
+    border-radius: 8px;
+    width: 200px;
+    height: 500px;
+}

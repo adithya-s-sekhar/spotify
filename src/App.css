@@ -1,0 +1,16 @@
+.app-wrapper{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-areas: 
+    "nav-box main main" 
+    "your-library main main" 
+    ;
+    gap: 10px;
+    padding: 10px;
+}
+
+div{
+    text-align: center;
+    color: #fff;
+}

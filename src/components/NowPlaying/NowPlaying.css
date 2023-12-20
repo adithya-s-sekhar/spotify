@@ -1,0 +1,7 @@
+.now-playing{
+    grid-area: now-playing;
+    background-color: #000;
+    border-radius: 8px;
+    width: 100%;
+    height: 100px;
+}
