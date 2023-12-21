@@ -4,7 +4,7 @@
     align-items: flex-start;
     background-color: #242424;
     border-radius: 8px;
-    gap: 20px;
+    gap: 8px;
     padding: 8px;
 }
 
@@ -23,7 +23,7 @@
 
 .your-library-card-text-text{
     font-size: 0.875rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .your-library-card-action{

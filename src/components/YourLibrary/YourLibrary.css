@@ -5,7 +5,7 @@
     padding: 8px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
 }
 
 .your-library-header{
@@ -24,6 +24,6 @@
 .your-library-content{
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
     padding: 8px;
 }
