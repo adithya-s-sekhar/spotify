@@ -11,8 +11,8 @@ function App() {
         <NavBox />
         <YourLibrary />
         <Main />
+        <NowPlaying />
       </div>
-      <NowPlaying />
     </div>
   );
 }
