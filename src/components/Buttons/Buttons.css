@@ -59,10 +59,19 @@
     border-radius: 9999px;
     justify-content: center;
     align-items: center;
-    padding: 6px 18px;
+    padding: 7px 20px;
+    cursor: pointer;
 }
 
 .button-text{
     color: #000;
     font-weight: 700;
+}
+
+.button:hover{
+    background-color: #f6f6f6;
+}
+
+.button-text:hover{
+    transform: scale(1.04);
 }
