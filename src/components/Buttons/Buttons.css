@@ -70,8 +70,5 @@
 
 .button:hover{
     background-color: #f6f6f6;
-}
-
-.button-text:hover{
     transform: scale(1.04);
 }
