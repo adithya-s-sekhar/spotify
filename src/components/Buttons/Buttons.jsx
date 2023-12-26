@@ -39,3 +39,20 @@ export const Button = (props) => {
         </div>
      );
 }
+
+export const ButtonWithIcon = (props) => {
+    const icon = props.icon;
+    const text = props.text;
+    const extraClass = props.class;
+
+    return ( 
+        <div className={`button-with-icon ${extraClass}`}>
+            <div className='button-with-icon-svg'>
+                {icon}
+            </div>
+            <div className='button-with-icon-text'>
+                {text}
+            </div>
+        </div>
+     );
+}

@@ -1,3 +1,7 @@
+/*
+    IconWithText
+*/
+
 .icon-with-text{
     display: flex;
     gap: 16px;
@@ -10,8 +14,8 @@
     height: 24px;
 }
 
-.icon-with-text-svg svg{
-    fill: #fff;
+.icon-with-text-svg{
+    fill: #a7a7a7;
 }
 
 .icon-with-text-text{
@@ -20,11 +24,15 @@
     font-weight: 700;
 }
 
-.icon-with-text-text:hover{
+.icon-with-text:hover .icon-with-text-text{
     color: #fff;
-    fill: #fff;
-
 }
+
+.icon-with-text:hover .icon-with-text-svg{
+    fill: #fff;
+}
+
+/* Icon */
 
 .icon{
     display: flex;
@@ -44,18 +52,19 @@
     background-color: #1a1a1a;
 }
 
-.icon-svg svg{
+.icon-svg{
     fill: #a7a7a7;
 }
 
-.icon-svg svg:hover{
+.icon:hover .icon-svg{
     fill: #fff;
 }
 
+/* Button */
+
 .button{
-    display: flex;
     background-color: #fff;
-    display: inline-block;
+    display: inline-flex;
     border-radius: 9999px;
     justify-content: center;
     align-items: center;
@@ -71,4 +80,44 @@
 .button:hover{
     background-color: #f6f6f6;
     transform: scale(1.04);
+}
+
+/* ButtonWithIcon */
+
+.button-with-icon{
+    background-color: #fff;
+    display: inline-flex;
+    border-radius: 9999px;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 20px;
+    cursor: pointer;
+    gap: 8px;
+}
+
+.button-with-icon-svg{
+    width: 16px;
+    height: 16px;
+}
+
+.button-with-icon-text{
+    color: #000;
+    font-weight: 700;
+}
+
+.button-with-icon:hover{
+    background-color: #f6f6f6;
+    transform: scale(1.04);
+}
+
+.button-with-icon.dark{
+    background-color: rgba(0,0,0,0.54);
+}
+
+.button-with-icon.dark .button-with-icon-svg{
+    fill: #fff;
+}
+
+.button-with-icon.dark .button-with-icon-text{
+    color: #fff;
 }
