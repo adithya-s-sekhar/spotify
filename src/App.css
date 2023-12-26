@@ -1,11 +1,11 @@
 .app-wrapper{
     display: grid;
     grid-template-rows: auto 1fr 5rem;
-    grid-template-columns: 30rem 1fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-areas: 
-    "nav-box main main" 
-    "your-library main main" 
-    "now-playing now-playing now-playing"
+    "nav-box main" 
+    "your-library main" 
+    "now-playing now-playing"
     ;
     gap: 8px;
     padding: 8px;
