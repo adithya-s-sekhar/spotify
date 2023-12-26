@@ -1,9 +1,10 @@
+import Navbar from '../Navbar/Navbar';
 import './Main.css';
 
 const Main = () => {
     return ( 
         <div className='main'>
-            MAIN
+            <Navbar />
         </div>
      );
 }
