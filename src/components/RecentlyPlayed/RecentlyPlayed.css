@@ -1,0 +1,17 @@
+.recently-played{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+    gap: 32px;
+}
+
+.recently-played-header{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.recently-played-cards{
+    display: flex;
+    gap: 20px;
+}

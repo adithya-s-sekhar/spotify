@@ -1,0 +1,28 @@
+.album-card{
+    background-color: #181818;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 150px;
+    padding: 16px;
+    overflow: hidden;
+}
+
+.album-card-art img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.album-card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+}
+
+.album-card-title,.album-card-arists{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
