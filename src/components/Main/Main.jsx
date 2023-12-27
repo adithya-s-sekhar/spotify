@@ -46,6 +46,16 @@ const Main = () => {
             name: 'Serenade of the Stars',
             albumart: 'albumart.jpg',
             artists: 'Celestial Harmony Orchestra'
+        },
+        {
+            name: 'Dreamscapes',
+            albumart: 'albumart.jpg',
+            artists: 'Somnolent Symphony'
+        },
+        {
+            name: 'Rhythms of the Cosmos',
+            albumart: 'albumart.jpg',
+            artists: 'Cosmic Percussionists'
         }
     ]
 
