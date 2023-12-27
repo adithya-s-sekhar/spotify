@@ -1,4 +1,4 @@
-.recently-played{
+.album-row{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -6,13 +6,13 @@
     gap: 24px;
 }
 
-.recently-played-header{
+.album-row-header{
     font-size: 1.5em;
     font-weight: 700;
     padding: 8px;
 }
 
-.recently-played-cards{
+.album-row-cards{
     display: flex;
     gap: 20px;
     padding: 8px;
