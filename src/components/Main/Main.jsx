@@ -18,16 +18,6 @@ const Main = () => {
 
     const madeForYou = [
         {
-            name: 'Revengers (Original Motion Picture Soundtrack)',
-            albumart: 'albumart.jpg',
-            artists: 'Hans Dimmer'
-        },
-        {
-            name: 'SuperheroMovie 2: Revenge of Someone (Original Motion Picture Soundtrack)',
-            albumart: 'albumart.jpg',
-            artists: 'Various Artists'
-        },
-        {
             name: 'Galactic Odyssey',
             albumart: 'albumart.jpg',
             artists: 'Stellar Ensemble'
