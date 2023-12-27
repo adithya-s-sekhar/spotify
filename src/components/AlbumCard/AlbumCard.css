@@ -1,4 +1,5 @@
 .album-card{
+    flex-shrink: 0;
     background-color: #181818;
     border-radius: 8px;
     display: flex;
