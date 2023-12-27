@@ -13,7 +13,28 @@
 }
 
 .album-row-cards{
+    width: 100%;
     display: flex;
     gap: 20px;
     padding: 8px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.album-row-cards {
+    scrollbar-color: hsla(0,0%,100%,.3) transparent;
+}
+
+.album-row-cards::-webkit-scrollbar {
+    height: 6px;
+}
+
+.album-row-cards::-webkit-scrollbar-thumb {
+    background: hsla(0,0%,100%,.3);
+    border-radius: 8px;
+}
+
+.album-row-cards::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 8px;
 }
