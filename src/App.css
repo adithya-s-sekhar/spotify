@@ -1,6 +1,6 @@
 .app-wrapper{
     display: grid;
-    grid-template-rows: auto auto 5rem;
+    grid-template-rows: 150px auto 5rem;
     grid-template-columns: auto 1fr;
     grid-template-areas: 
     "nav-box main" 
@@ -10,10 +10,4 @@
     gap: 8px;
     padding: 8px;
     height: 100vh;
-}
-
-/* Remove this after content takes space */
-div{
-    text-align: center;
-    color: #fff;
 }
