@@ -53,6 +53,7 @@
     padding: 8px;
     border-radius: 50%;
     cursor: pointer;
+    
 }
 
 .icon-svg{
@@ -62,12 +63,16 @@
 
 .icon:hover{
     background-color: #1a1a1a;
-    transition: background-color .3s;
+    box-shadow: 10px 10px 9px 0px rgba(0,0,0,0.75);
+    transition-property: background-color,box-shadow;
+    transition-duration: .3s;
 }
 
 .icon:not(:hover){
     background-color: inherit;
-    transition: background-color .3s;
+    box-shadow: none;
+    transition-property: background-color,box-shadow;
+    transition-duration: .3s;
 }
 
 .icon-svg{
@@ -105,14 +110,14 @@
     background-color: #f6f6f6;
     transform: scale(1.04);
     transition-property: background-color, transform;
-    transition-duration: .3s;
+    transition-duration: .1s;
 }
 
 .button:not(:hover){
     background-color: #fff;
     transform: scale(1);
     transition-property: background-color, transform;
-    transition-duration: .3s;
+    transition-duration: .1s;
 }
 
 /* ButtonWithIcon */
@@ -142,14 +147,14 @@
     background-color: #f6f6f6;
     transform: scale(1.04);
     transition-property: background-color,transform;
-    transition-duration: .3s;
+    transition-duration: .1s;
 }
 
 .button-with-icon:not(:hover){
     background-color: #fff;
     transform: scale(1);
     transition-property: background-color,transform;
-    transition-duration: .3s;
+    transition-duration: .1s;
 }
 
 .button-with-icon.dark{
@@ -167,11 +172,11 @@
 .button-with-icon.dark:hover{
     transform: scale(1.04);
     transition-property: background-color,transform;
-    transition-duration: .3s;
+    transition-duration: .1s;
 }
 
 .button-with-icon.dark:not(:hover){
     transform: scale(1);
     transition-property: background-color,transform;
-    transition-duration: .3s;
+    transition-duration: .1s;
 }
