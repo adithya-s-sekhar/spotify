@@ -1,6 +1,7 @@
 import Navbar from '../Navbar/Navbar';
 import AlbumRow from '../AlbumRow/AlbumRow';
 import './Main.css';
+import Footer from '../Footer/Footer';
 
 const Main = () => {
     const recentlyPlayed = [
@@ -80,6 +81,7 @@ const Main = () => {
                 header = "Discover picks for you"
                 items = {madeForYou}
             />
+            <Footer />
         </div>
      );
 }
