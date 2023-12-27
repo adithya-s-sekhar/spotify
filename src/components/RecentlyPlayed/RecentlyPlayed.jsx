@@ -3,12 +3,12 @@ import './RecentlyPlayed.css';
 
 const RecentlyPlayed = () => {
     const items = [{
-        name: 'Theri (Original Motion Picture Soundtrack)',
-        albumart: 'Theri_soundtrack_album.jpg',
-        artists: 'G. V. Prakash'
+        name: 'Revengers (Original Motion Picture Soundtrack)',
+        albumart: 'albumart.jpg',
+        artists: 'Hans Dimmer'
     },{
-        name: 'Kaththi (Original Motion Picture Soundtrack',
-        albumart: 'Kaththi_soundtrack_cover.jpg',
+        name: 'SuperheroMovie 2: Revenge of Someone (Original Motion Picture Soundtrack)',
+        albumart: 'albumart.jpg',
         artists: 'Various Artists'
     }]
 
