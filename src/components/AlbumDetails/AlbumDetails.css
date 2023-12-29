@@ -1,11 +1,13 @@
 .album-details{
     display: flex;
     flex-direction: column;
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(71,97,82,1) 100%);
 }
 
 .album-header{
-    background: rgb(26,80,43);
-    background: linear-gradient(0deg, rgba(26,80,43,1) 0%, rgba(149,205,174,1) 95%);
+    background: rgb(71,97,82);
+    background: linear-gradient(0deg, rgba(71,97,82,1) 0%, rgba(18,18,18,1) 100%);
     display: flex;
     gap: 24px;
     padding-top: 150px;
@@ -83,8 +85,8 @@
 }
 
 .album-body{
-    background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(71,97,82,1) 100%);
+    background: rgb(18,18,18);
+    background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(71,97,82,1) 100%);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     display: flex;
@@ -233,6 +235,7 @@
 .album-body-songs-index-header{
     width: 10%;
     text-align: left;
+    padding-left: 20px;
 }
 
 .album-body-songs-title-header{
@@ -243,6 +246,7 @@
 .album-body-songs-dur-header{
     width: 20%;
     text-align: right;
+    padding-right: 20px;
 }
 
 .album-body-songs-dur-header svg{
@@ -254,5 +258,36 @@
 /* */
 
 .album-body-songs-list{
-    
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 32px;
+}
+
+.album-body-song{
+    display: flex;
+    align-items: flex-start;
+}
+
+.album-body-song-index{
+    width: 10%;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.album-body-song-details{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.album-body-song-dur{
+    width: 20%;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.album-body-song-artist{
+    color: #a7a7a7;
 }
