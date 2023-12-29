@@ -20,7 +20,7 @@ export const Icon = (props) => {
 const icon_svg = props.icon;
 
     return ( 
-        <div className='icon'>
+        <div className='icon' onClick={props.onClick}>
             <div className='icon-svg'>
                 {icon_svg}
             </div>

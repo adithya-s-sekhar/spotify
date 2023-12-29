@@ -1,7 +1,12 @@
 import { Button, ButtonWithIcon, Icon } from "../Buttons/Buttons";
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
+    const navigate = useNavigate();
+    const back = () => { navigate(-1) };
+    const fwd = () => { navigate(1) };
+
     const back_svg = <svg viewBox="0 0 16 16"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path></svg>
 
     const forward_svg = <svg viewBox="0 0 16 16"><path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path></svg>
@@ -17,9 +22,11 @@ const Navbar = () => {
             <div className="navbar-left">
                 <Icon
                     icon = {back_svg}
+                    onClick = {() => back()}
                 />
                 <Icon
                     icon = {forward_svg}
+                    onClick = {() => fwd()}
                 />
             </div>
             <div className="navbar-right">
