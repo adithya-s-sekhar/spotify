@@ -1,6 +1,27 @@
 .album-body-song{
     display: flex;
     align-items: flex-start;
+    cursor: pointer;
+    color: #a7a7a7;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 8px;
+}
+
+.album-body-song:hover{
+    background-color: rgba(128, 128, 128, .3);
+    color: #fff;
+    transform: scale(1.01);
+    transition-property: background-color, color, transform;
+    transition-duration: .2s;
+}
+
+.album-body-song:not(:hover){
+    background: none;
+    color: #a7a7a7;
+    transform: scale(1);
+    transition-property: background-color, color, transform;
+    transition-duration: .1s;
 }
 
 .album-body-song-index{
