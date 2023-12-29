@@ -18,6 +18,7 @@
 .album-header-art{
     width: 220px;
     height: 220px;
+    flex-shrink: 0;
 }
 
 .album-header-art:hover{
