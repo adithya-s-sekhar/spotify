@@ -1,9 +1,10 @@
-export const recentlyPlayed = [
+export const albums = [
     {
+        id: 1,
         title: 'Revengers (Original Motion Picture Soundtrack)',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Hans Dimmer',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
@@ -33,13 +34,15 @@ export const recentlyPlayed = [
             }
         ],
         longDate: '01-Jan-2014',
-        copyright: 'Song Rights Company'
+        copyright: 'Song Rights Company',
+        recent: true
     },
     {
+        id: 2,
         title: 'SuperheroMovie 2: Revenge of Someone (Original Motion Picture Soundtrack)',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Various Artists',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
@@ -69,16 +72,15 @@ export const recentlyPlayed = [
             }
         ],
         longDate: '01-Jan-2014',
-        copyright: 'Song Rights Company'
-    }
-]
-
-export const madeForYou = [
+        copyright: 'Song Rights Company',
+        recent: true
+    },
     {
+        id: 3,
         title: 'Galactic Odyssey',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Stellar Ensemble',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
@@ -111,10 +113,11 @@ export const madeForYou = [
         copyright: 'Song Rights Company'
     },
     {
+        id: 4,
         title: 'Lost in Time',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Chrono Wave',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
@@ -147,10 +150,11 @@ export const madeForYou = [
         copyright: 'Song Rights Company'
     },
     {
+        id: 5,
         title: 'Epic Journeys',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Quest Soundtrack',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
@@ -183,10 +187,11 @@ export const madeForYou = [
         copyright: 'Song Rights Company'
     },
     {
+        id: 6,
         title: 'City Lights',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Urban Grooves Collective',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
@@ -219,10 +224,11 @@ export const madeForYou = [
         copyright: 'Song Rights Company'
     },
     {
+        id: 7,
         title: 'Voyage to the Unknown',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Mystery Explorers',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
@@ -255,10 +261,11 @@ export const madeForYou = [
         copyright: 'Song Rights Company'
     },
     {
+        id: 8,
         title: 'Serenade of the Stars',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Celestial Harmony Orchestra',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
@@ -291,10 +298,11 @@ export const madeForYou = [
         copyright: 'Song Rights Company'
     },
     {
+        id: 9,
         title: 'Dreamscapes',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Somnolent Symphony',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
@@ -327,10 +335,11 @@ export const madeForYou = [
         copyright: 'Song Rights Company'
     },
     {
+        id: 10,
         title: 'Rhythms of the Cosmos',
-        art: 'art.jpg',
+        art: '/art.jpg',
         artist: 'Cosmic Percussionists',
-        artistArt: 'artistart.jpg',
+        artistArt: '/artistart.jpg',
         category: 'Album',
         year: '2014',
         songs: [
