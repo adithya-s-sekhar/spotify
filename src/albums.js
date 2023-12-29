@@ -1,6 +1,6 @@
 export const recentlyPlayed = [
     {
-        name: 'Revengers (Original Motion Picture Soundtrack)',
+        title: 'Revengers (Original Motion Picture Soundtrack)',
         art: 'art.jpg',
         artist: 'Hans Dimmer',
         artistart: 'artistart.jpg',
@@ -8,7 +8,7 @@ export const recentlyPlayed = [
         year: '2014'
     },
     {
-        name: 'SuperheroMovie 2: Revenge of Someone (Original Motion Picture Soundtrack)',
+        title: 'SuperheroMovie 2: Revenge of Someone (Original Motion Picture Soundtrack)',
         art: 'art.jpg',
         artist: 'Various Artists',
         artistart: 'artistart.jpg',
@@ -19,7 +19,7 @@ export const recentlyPlayed = [
 
 export const madeForYou = [
     {
-        name: 'Galactic Odyssey',
+        title: 'Galactic Odyssey',
         art: 'art.jpg',
         artist: 'Stellar Ensemble',
         artistart: 'artistart.jpg',
@@ -27,7 +27,7 @@ export const madeForYou = [
         year: '2014'
     },
     {
-        name: 'Lost in Time',
+        title: 'Lost in Time',
         art: 'art.jpg',
         artist: 'Chrono Wave',
         artistart: 'artistart.jpg',
@@ -35,7 +35,7 @@ export const madeForYou = [
         year: '2014'
     },
     {
-        name: 'Epic Journeys',
+        title: 'Epic Journeys',
         art: 'art.jpg',
         artist: 'Quest Soundtrack',
         artistart: 'artistart.jpg',
@@ -43,7 +43,7 @@ export const madeForYou = [
         year: '2014'
     },
     {
-        name: 'City Lights',
+        title: 'City Lights',
         art: 'art.jpg',
         artist: 'Urban Grooves Collective',
         artistart: 'artistart.jpg',
@@ -51,7 +51,7 @@ export const madeForYou = [
         year: '2014'
     },
     {
-        name: 'Voyage to the Unknown',
+        title: 'Voyage to the Unknown',
         art: 'art.jpg',
         artist: 'Mystery Explorers',
         artistart: 'artistart.jpg',
@@ -59,7 +59,7 @@ export const madeForYou = [
         year: '2014'
     },
     {
-        name: 'Serenade of the Stars',
+        title: 'Serenade of the Stars',
         art: 'art.jpg',
         artist: 'Celestial Harmony Orchestra',
         artistart: 'artistart.jpg',
@@ -67,7 +67,7 @@ export const madeForYou = [
         year: '2014'
     },
     {
-        name: 'Dreamscapes',
+        title: 'Dreamscapes',
         art: 'art.jpg',
         artist: 'Somnolent Symphony',
         artistart: 'artistart.jpg',
@@ -75,7 +75,7 @@ export const madeForYou = [
         year: '2014'
     },
     {
-        name: 'Rhythms of the Cosmos',
+        title: 'Rhythms of the Cosmos',
         art: 'art.jpg',
         artist: 'Cosmic Percussionists',
         artistart: 'artistart.jpg',

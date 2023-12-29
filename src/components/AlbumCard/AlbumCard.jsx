@@ -11,7 +11,7 @@ const AlbumCard = (props) => {
             </div>
             <div className='album-card-details'>
                 <div className="album-card-title">
-                    {album.name}
+                    {album.title}
                 </div>
                 <div className="album-card-artists">
                     {album.artist}
