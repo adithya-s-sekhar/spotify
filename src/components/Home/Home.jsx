@@ -3,12 +3,13 @@ import AlbumRow from '../AlbumRow/AlbumRow';
 
 const Home = (props) => {
     const albums = props.albums;
+    const recentlyPlayed = albums.filter((album) => album.recent === true);
 
     return ( 
         <div className="home">
             <AlbumRow 
                 header = "Recently Played"
-                items = {albums}
+                items = {recentlyPlayed}
             />
             <AlbumRow 
                 header = "Made For You"
