@@ -3,20 +3,4 @@
     background-color: #121212;
     border-radius: 8px;
     overflow-y: scroll;
-    scrollbar-width: thin;
-    scrollbar-color: hsla(0,0%,100%,.3) transparent;
-}
-
-.main::-webkit-scrollbar {
-    width: 8px;
-}
-
-.main::-webkit-scrollbar-thumb {
-    background: hsla(0,0%,100%,.3);
-    border-radius: 8px;
-}
-
-.main::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 8px;
 }

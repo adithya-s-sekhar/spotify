@@ -21,21 +21,6 @@
     white-space: nowrap;
 }
 
-.album-row-cards {
-    scrollbar-width: thin;
-    scrollbar-color: hsla(0,0%,100%,.3) transparent;
-}
-
 .album-row-cards::-webkit-scrollbar {
     height: 6px;
-}
-
-.album-row-cards::-webkit-scrollbar-thumb {
-    background: hsla(0,0%,100%,.3);
-    border-radius: 8px;
-}
-
-.album-row-cards::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 8px;
 }
