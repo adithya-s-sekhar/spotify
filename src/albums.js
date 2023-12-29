@@ -5,7 +5,10 @@ export const recentlyPlayed = [
         artist: 'Hans Dimmer',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     },
     {
         title: 'SuperheroMovie 2: Revenge of Someone (Original Motion Picture Soundtrack)',
@@ -13,7 +16,10 @@ export const recentlyPlayed = [
         artist: 'Various Artists',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     }
 ]
 
@@ -24,7 +30,10 @@ export const madeForYou = [
         artist: 'Stellar Ensemble',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     },
     {
         title: 'Lost in Time',
@@ -32,7 +41,10 @@ export const madeForYou = [
         artist: 'Chrono Wave',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     },
     {
         title: 'Epic Journeys',
@@ -40,7 +52,10 @@ export const madeForYou = [
         artist: 'Quest Soundtrack',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     },
     {
         title: 'City Lights',
@@ -48,7 +63,10 @@ export const madeForYou = [
         artist: 'Urban Grooves Collective',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     },
     {
         title: 'Voyage to the Unknown',
@@ -56,7 +74,10 @@ export const madeForYou = [
         artist: 'Mystery Explorers',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     },
     {
         title: 'Serenade of the Stars',
@@ -64,7 +85,10 @@ export const madeForYou = [
         artist: 'Celestial Harmony Orchestra',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     },
     {
         title: 'Dreamscapes',
@@ -72,7 +96,10 @@ export const madeForYou = [
         artist: 'Somnolent Symphony',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     },
     {
         title: 'Rhythms of the Cosmos',
@@ -80,6 +107,9 @@ export const madeForYou = [
         artist: 'Cosmic Percussionists',
         artistart: 'artistart.jpg',
         category: 'Album',
-        year: '2014'
+        year: '2014',
+        songs: ['Song1.mp3','Song2.mp3','Song3.mp3','Song4.mp3'],
+        longDate: '01-Jan-2014',
+        copyright: 'Song Rights Company'
     }
 ]
