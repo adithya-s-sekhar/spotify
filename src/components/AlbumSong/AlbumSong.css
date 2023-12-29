@@ -10,7 +10,6 @@
 
 .album-body-song:hover{
     background-color: rgba(128, 128, 128, .3);
-    color: #fff;
     transform: scale(1.01);
     transition-property: background-color, color, transform;
     transition-duration: .2s;
@@ -18,7 +17,6 @@
 
 .album-body-song:not(:hover){
     background: none;
-    color: #a7a7a7;
     transform: scale(1);
     transition-property: background-color, color, transform;
     transition-duration: .1s;
@@ -43,6 +41,13 @@
     padding-right: 20px;
 }
 
+.album-body-song-title{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
 .album-body-song-artist{
-    color: #a7a7a7;
+    font-weight: 400;
+    font-size: 0.875rem;
 }
