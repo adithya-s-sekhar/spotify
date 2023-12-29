@@ -11,3 +11,10 @@
     padding: 8px;
     height: 100vh;
 }
+
+.main{
+    grid-area: main;
+    background-color: #121212;
+    border-radius: 8px;
+    overflow-y: scroll;
+}
