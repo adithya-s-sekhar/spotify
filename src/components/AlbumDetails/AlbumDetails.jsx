@@ -91,10 +91,10 @@ const AlbumDetails = (props) => {
                         ))}
                     </div>
                 </div>
-            </div>
-            <div className="album-footer">
-                {album.longDate}
-                {album.copyright}
+                <div className="album-right">
+                    {album.longDate}
+                    {album.copyright}
+                </div>
             </div>
         </div>
      );
