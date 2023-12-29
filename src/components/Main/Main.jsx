@@ -9,10 +9,10 @@ const Main = () => {
     return ( 
         <div className='main'>
             <Navbar />
-            {/* <Home /> */}
             <AlbumDetails
                 album = {recentlyPlayed[0]}
             />
+            <Home />
             <Footer />
         </div>
      );
