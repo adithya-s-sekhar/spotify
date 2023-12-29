@@ -3,18 +3,22 @@ import './Main.css';
 import Footer from '../Footer/Footer';
 import Home from '../Home/Home';
 import AlbumDetails from '../AlbumDetails/AlbumDetails';
-import { recentlyPlayed } from '../../albums';
+import { albums } from '../../albums';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 
 const Main = () => {
     return ( 
+        <Router>
         <div className='main'>
-            <Navbar />
-            <AlbumDetails
-                album = {recentlyPlayed[0]}
-            />
-            <Home />
+          <Navbar />
+            <Routes>
+                <Route exact path = "/" element = { <Home albums = {albums} /> }/>
+                <Route exact path = "/album/:id" element = { <AlbumDetails albums = {albums} /> }/>
+            </Routes>
             <Footer />
         </div>
+      </Router>
      );
 }
  

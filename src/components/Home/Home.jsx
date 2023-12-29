@@ -1,26 +1,26 @@
 import './Home.css';
 import AlbumRow from '../AlbumRow/AlbumRow';
-import { recentlyPlayed,madeForYou } from '../../albums';
 
-const Home = () => {
+const Home = (props) => {
+    const albums = props.albums;
 
     return ( 
         <div className="home">
             <AlbumRow 
                 header = "Recently Played"
-                items = {recentlyPlayed}
+                items = {albums}
             />
             <AlbumRow 
                 header = "Made For You"
-                items = {madeForYou}
+                items = {albums}
             />
             <AlbumRow 
                 header = "Popular albums"
-                items = {madeForYou}
+                items = {albums}
             />
             <AlbumRow 
                 header = "Discover picks for you"
-                items = {madeForYou}
+                items = {albums}
             />
         </div>
      );

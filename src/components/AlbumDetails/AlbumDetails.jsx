@@ -1,8 +1,11 @@
+import { useParams } from "react-router-dom";
 import './AlbumDetails.css';
 import AlbumSong from '../AlbumSong/AlbumSong';
 
 const AlbumDetails = (props) => {
-    const album = props.album;
+    const { id } = useParams();
+    const numericId = Number(id);
+    const album = props.albums.find(({ id }) => id == numericId);
 
     return ( 
         <div className="album-details">
