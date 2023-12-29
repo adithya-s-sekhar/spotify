@@ -29,7 +29,7 @@ const AlbumDetails = (props) => {
         <div className="album-details">
             <div className="album-header">
                 <div className="album-header-art">
-                    <img src={album.albumart} />
+                    <img src={album.art} />
                 </div>
                 <div className="album-header-text">
                     <div className="album-header-category">
