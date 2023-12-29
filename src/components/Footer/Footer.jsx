@@ -11,9 +11,9 @@ const Footer = () => {
                         </div>
                         <div className="footer-menu-link-block-links">
                             <ul>
-                                <li><a href=''>About</a></li>
-                                <li><a href=''>Jobs</a></li>
-                                <li><a href=''>For the Record</a></li>
+                                <li><a href='#'>About</a></li>
+                                <li><a href='#'>Jobs</a></li>
+                                <li><a href='#'>For the Record</a></li>
                             </ul>
                         </div>
                     </div>
@@ -23,11 +23,11 @@ const Footer = () => {
                         </div>
                         <div className="footer-menu-link-block-links">
                             <ul>
-                                <li><a href=''>For Artists</a></li>
-                                <li><a href=''>Developers</a></li>
-                                <li><a href=''>Advertising</a></li>
-                                <li><a href=''>Investors</a></li>
-                                <li><a href=''>Vendors</a></li>
+                                <li><a href='#'>For Artists</a></li>
+                                <li><a href='#'>Developers</a></li>
+                                <li><a href='#'>Advertising</a></li>
+                                <li><a href='#'>Investors</a></li>
+                                <li><a href='#'>Vendors</a></li>
                             </ul>
                         </div>
                     </div>
@@ -37,8 +37,8 @@ const Footer = () => {
                         </div>
                         <div className="footer-menu-link-block-links">
                             <ul>
-                                <li><a href=''>Support</a></li>
-                                <li><a href=''>Free Mobile App</a></li>
+                                <li><a href='#'>Support</a></li>
+                                <li><a href='#'>Free Mobile App</a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,12 +58,12 @@ const Footer = () => {
             <div className="footer-bar">
                 <div className="footer-bar-links">
                     <ul>
-                        <li><a href="">Legal</a></li>
-                        <li><a href="">Privacy Center</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Cookies</a></li>
-                        <li><a href="">About Ads</a></li>
-                        <li><a href="">Accessibility</a></li>
+                        <li><a href='#'>Legal</a></li>
+                        <li><a href='#'>Privacy Center</a></li>
+                        <li><a href='#'>Privacy Policy</a></li>
+                        <li><a href='#'>Cookies</a></li>
+                        <li><a href='#'>About Ads</a></li>
+                        <li><a href='#'>Accessibility</a></li>
                     </ul>
                 </div>
                 <div className="footer-bar-copy">
