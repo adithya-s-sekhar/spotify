@@ -24,7 +24,12 @@ function App() {
             </Routes>
           <Footer />
         </div>
-        <NowPlaying />
+        {/* <NowPlaying /> */}
+        <NowPlaying
+          album = {albums[0]}
+          song = {albums[0].songs[0]}
+        />
+        {/* temporarily for testing */}
       </div>
     </div>
     </Router>

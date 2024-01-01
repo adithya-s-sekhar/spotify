@@ -1,0 +1,45 @@
+.np-item{
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.np-item-art{
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+}
+
+.np-item-art img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.np-item-details{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.np-item-title{
+    font-size: 0.875rem;
+}
+
+.np-item-artist{
+    font-size: 0.6875rem;
+    color: #6a6a6a;
+}
+
+.np-item-heart{
+    width: 16px;
+    height: 16px;
+}
+
+.np-item-heart svg{
+    fill: #a7a7a7;
+}

@@ -1,6 +1,6 @@
 import './AlbumSong.css';
 
-const AlbumSong = ({index, songTitle, songArtist, songDur}) => {
+const AlbumSong = ({index, songTitle, songArtist, songDur, album}) => {
     return (
         <div className="album-body-song">
             <div className="album-body-song-index">

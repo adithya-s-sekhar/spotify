@@ -69,6 +69,7 @@ const AlbumDetails = (props) => {
                                 songTitle={song.songTitle}
                                 songArtist={song.songArtist}
                                 songDur={song.songDur}
+                                album={album}
                             />
                         ))}
                     </div>
