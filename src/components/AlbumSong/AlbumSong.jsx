@@ -1,8 +1,17 @@
+import { useContext } from 'react';
 import './AlbumSong.css';
+import { CurrPlayingItemContext } from '../../contexts/CurrPlayingItemContext';
 
 const AlbumSong = ({index, songTitle, songArtist, songDur, album}) => {
+    const currPlayingItem = useContext(CurrPlayingItemContext);
+
+    function changeSong() {
+        currPlayingItem.setCurrPlayingAlbum(album);
+        currPlayingItem.setCurrPlayingSong(album.songs[index]);
+    }
+
     return (
-        <div className="album-body-song">
+        <div className="album-body-song" onClick={changeSong}>
             <div className="album-body-song-index">
                 {index}
             </div>
