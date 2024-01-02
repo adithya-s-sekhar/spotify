@@ -16,19 +16,19 @@ export const albums = [
             },
             {
                 songTitle: 'Song 2',
-                songFile: '/sample.mp3',
+                songFile: '/sample2.mp3',
                 songArtist: 'Singer 2, Singer 3',
                 songDur: '4m'
             },
             {
                 songTitle: 'Song 3',
-                songFile: '/sample.mp3',
+                songFile: '/sample3.mp3',
                 songArtist: 'Singer 3, Singer 4',
                 songDur: '5m'
             },
             {
                 songTitle: 'Song 4',
-                songFile: '/sample.mp3',
+                songFile: '/sample4.mp3',
                 songArtist: 'Singer 4, Singer 1',
                 songDur: '3m'
             }
@@ -54,19 +54,19 @@ export const albums = [
             },
             {
                 songTitle: 'Song 2',
-                songFile: '/sample.mp3',
+                songFile: '/sample2.mp3',
                 songArtist: 'Singer 2, Singer 3',
                 songDur: '4m'
             },
             {
                 songTitle: 'Song 3',
-                songFile: '/sample.mp3',
+                songFile: '/sample3.mp3',
                 songArtist: 'Singer 3, Singer 4',
                 songDur: '5m'
             },
             {
                 songTitle: 'Song 4',
-                songFile: '/sample.mp3',
+                songFile: '/sample4.mp3',
                 songArtist: 'Singer 4, Singer 1',
                 songDur: '3m'
             }
@@ -92,19 +92,19 @@ export const albums = [
             },
             {
                 songTitle: 'Song 2',
-                songFile: '/sample.mp3',
+                songFile: '/sample2.mp3',
                 songArtist: 'Singer 2, Singer 3',
                 songDur: '4m'
             },
             {
                 songTitle: 'Song 3',
-                songFile: '/sample.mp3',
+                songFile: '/sample3.mp3',
                 songArtist: 'Singer 3, Singer 4',
                 songDur: '5m'
             },
             {
                 songTitle: 'Song 4',
-                songFile: '/sample.mp3',
+                songFile: '/sample4.mp3',
                 songArtist: 'Singer 4, Singer 1',
                 songDur: '3m'
             }
@@ -129,19 +129,19 @@ export const albums = [
             },
             {
                 songTitle: 'Song 2',
-                songFile: '/sample.mp3',
+                songFile: '/sample2.mp3',
                 songArtist: 'Singer 2, Singer 3',
                 songDur: '4m'
             },
             {
                 songTitle: 'Song 3',
-                songFile: '/sample.mp3',
+                songFile: '/sample3.mp3',
                 songArtist: 'Singer 3, Singer 4',
                 songDur: '5m'
             },
             {
                 songTitle: 'Song 4',
-                songFile: '/sample.mp3',
+                songFile: '/sample4.mp3',
                 songArtist: 'Singer 4, Singer 1',
                 songDur: '3m'
             }
@@ -166,19 +166,19 @@ export const albums = [
             },
             {
                 songTitle: 'Song 2',
-                songFile: '/sample.mp3',
+                songFile: '/sample2.mp3',
                 songArtist: 'Singer 2, Singer 3',
                 songDur: '4m'
             },
             {
                 songTitle: 'Song 3',
-                songFile: '/sample.mp3',
+                songFile: '/sample3.mp3',
                 songArtist: 'Singer 3, Singer 4',
                 songDur: '5m'
             },
             {
                 songTitle: 'Song 4',
-                songFile: '/sample.mp3',
+                songFile: '/sample4.mp3',
                 songArtist: 'Singer 4, Singer 1',
                 songDur: '3m'
             }
@@ -203,19 +203,19 @@ export const albums = [
             },
             {
                 songTitle: 'Song 2',
-                songFile: '/sample.mp3',
+                songFile: '/sample2.mp3',
                 songArtist: 'Singer 2, Singer 3',
                 songDur: '4m'
             },
             {
                 songTitle: 'Song 3',
-                songFile: '/sample.mp3',
+                songFile: '/sample3.mp3',
                 songArtist: 'Singer 3, Singer 4',
                 songDur: '5m'
             },
             {
                 songTitle: 'Song 4',
-                songFile: '/sample.mp3',
+                songFile: '/sample4.mp3',
                 songArtist: 'Singer 4, Singer 1',
                 songDur: '3m'
             }
@@ -240,19 +240,19 @@ export const albums = [
             },
             {
                 songTitle: 'Song 2',
-                songFile: '/sample.mp3',
+                songFile: '/sample2.mp3',
                 songArtist: 'Singer 2, Singer 3',
                 songDur: '4m'
             },
             {
                 songTitle: 'Song 3',
-                songFile: '/sample.mp3',
+                songFile: '/sample3.mp3',
                 songArtist: 'Singer 3, Singer 4',
                 songDur: '5m'
             },
             {
                 songTitle: 'Song 4',
-                songFile: '/sample.mp3',
+                songFile: '/sample4.mp3',
                 songArtist: 'Singer 4, Singer 1',
                 songDur: '3m'
             }
@@ -277,19 +277,19 @@ export const albums = [
             },
             {
                 songTitle: 'Song 2',
-                songFile: '/sample.mp3',
+                songFile: '/sample2.mp3',
                 songArtist: 'Singer 2, Singer 3',
                 songDur: '4m'
             },
             {
                 songTitle: 'Song 3',
-                songFile: '/sample.mp3',
+                songFile: '/sample3.mp3',
                 songArtist: 'Singer 3, Singer 4',
                 songDur: '5m'
             },
             {
                 songTitle: 'Song 4',
-                songFile: '/sample.mp3',
+                songFile: '/sample4.mp3',
                 songArtist: 'Singer 4, Singer 1',
                 songDur: '3m'
             }

@@ -1,5 +1,11 @@
 sample.mp3 - Music by <a href="https://pixabay.com/users/top-flow-production-28521292/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=173188">Sergio Prosvirini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=173188">Pixabay</a>
 
+sample2.mp3 - Music by <a href="https://pixabay.com/users/teodholina-32752748/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=141320">teodholina</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=141320">Pixabay</a>
+
+sample3.mp3 - Music by <a href="https://pixabay.com/users/top-flow-production-28521292/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=148320">Sergio Prosvirini</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=148320">Pixabay</a>
+
+sample4.mp3 - Music by <a href="https://pixabay.com/users/makesoundmusic-36114089/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=150103">Mike Kripak</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=150103">Pixabay</a>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
