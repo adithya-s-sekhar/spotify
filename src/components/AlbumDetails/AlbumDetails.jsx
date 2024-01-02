@@ -65,7 +65,7 @@ const AlbumDetails = (props) => {
                         {album.songs.map((song, index) => (
                             <AlbumSong
                                 key={index}
-                                index={index + 1}
+                                index={index}
                                 songTitle={song.songTitle}
                                 songArtist={song.songArtist}
                                 songDur={song.songDur}

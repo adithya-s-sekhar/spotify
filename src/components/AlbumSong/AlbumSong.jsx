@@ -13,7 +13,7 @@ const AlbumSong = ({index, songTitle, songArtist, songDur, album}) => {
     return (
         <div className="album-body-song" onClick={changeSong}>
             <div className="album-body-song-index">
-                {index}
+                {index + 1}
             </div>
             <div className="album-body-song-details">
                 <div className="album-body-song-title">
