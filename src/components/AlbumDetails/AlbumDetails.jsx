@@ -1,11 +1,20 @@
 import { useParams } from "react-router-dom";
 import './AlbumDetails.css';
 import AlbumSong from '../AlbumSong/AlbumSong';
+import { useContext } from "react";
+import { CurrPlayingItemContext } from "../../contexts/CurrPlayingItemContext";
 
 const AlbumDetails = (props) => {
     const { id } = useParams();
     const numericId = Number(id);
     const album = props.albums.find(({ id }) => id == numericId);
+
+    const currPlayingItem = useContext(CurrPlayingItemContext);
+
+    function playAlbum() {
+        currPlayingItem.setCurrPlayingAlbum(album);
+        currPlayingItem.setCurrPlayingSong(album.songs[0]);
+    }
 
     return ( 
         <div className="album-details">
@@ -33,7 +42,7 @@ const AlbumDetails = (props) => {
             <div className="album-body">
                 <div className="album-body-controls">
                     <div className="album-body-controls-left">
-                        <div className="album-body-controls-play">
+                        <div className="album-body-controls-play" onClick={playAlbum}>
                             <svg viewBox="0 0 24 24"><path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path></svg>
                         </div>
                         <div className="album-body-controls-heart">
