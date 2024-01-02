@@ -8,7 +8,7 @@ import Home from './components/Home/Home';
 import AlbumDetails from './components/AlbumDetails/AlbumDetails';
 import { albums } from './albums';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CurrPlayingItemContext } from './contexts/CurrPlayingItemContext';
 
 function App() {
@@ -16,9 +16,18 @@ function App() {
   const initSong = initAlbum.songs[0];
   const [currPlayingAlbum, setCurrPlayingAlbum] = useState(initAlbum);
   const [currPlayingSong, setCurrPlayingSong] = useState(initSong);
+  const [isPlaying, setIsPlaying] = useState(false);
 
+  const currTrack = new Audio(currPlayingSong.songFile);
+
+  isPlaying ? currTrack.play() : currTrack.pause();
+  
   return (
-    <CurrPlayingItemContext.Provider value={{currPlayingAlbum, setCurrPlayingAlbum, currPlayingSong, setCurrPlayingSong}}>
+    <CurrPlayingItemContext.Provider value={{
+      currPlayingAlbum, setCurrPlayingAlbum, 
+      currPlayingSong, setCurrPlayingSong,
+      isPlaying, setIsPlaying,
+      }}>
       <Router>
         <div className="app">
           <div className='app-wrapper'>

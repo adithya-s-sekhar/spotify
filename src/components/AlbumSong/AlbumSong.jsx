@@ -6,8 +6,10 @@ const AlbumSong = ({index, songTitle, songArtist, songDur, album}) => {
     const currPlayingItem = useContext(CurrPlayingItemContext);
 
     function changeSong() {
+        currPlayingItem.setIsPlaying(false);
         currPlayingItem.setCurrPlayingAlbum(album);
         currPlayingItem.setCurrPlayingSong(album.songs[index]);
+        currPlayingItem.setIsPlaying(true);
     }
 
     return (
