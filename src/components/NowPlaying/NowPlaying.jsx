@@ -1,12 +1,15 @@
+import { useContext } from 'react';
 import NowPlayingItem from '../NowPlayingItem/NowPlayingItem';
 import './NowPlaying.css';
+import { CurrPlayingItemContext } from '../../contexts/CurrPlayingItemContext';
 
-const NowPlaying = ({album, song}) => {
+const NowPlaying = () => {
+    const currPlayingItem = useContext(CurrPlayingItemContext);
+
     return ( 
         <div className='now-playing'>
             <NowPlayingItem
-                song = {song}
-                album = {album}
+                item = {currPlayingItem}
             />
             <div className="np-main-controls">
                 <div className="np-playback-controls">

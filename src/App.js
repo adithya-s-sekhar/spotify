@@ -8,31 +8,35 @@ import Home from './components/Home/Home';
 import AlbumDetails from './components/AlbumDetails/AlbumDetails';
 import { albums } from './albums';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useState } from 'react';
+import { CurrPlayingItemContext } from './contexts/CurrPlayingItemContext';
 
 function App() {
+  const initAlbum = albums[0];
+  const initSong = initAlbum.songs[0];
+  const [currPlayingAlbum, setCurrPlayingAlbum] = useState(initAlbum);
+  const [currPlayingSong, setCurrPlayingSong] = useState(initSong);
+
   return (
-    <Router>
-    <div className="app">
-      <div className='app-wrapper'>
-        <NavBox />
-        <YourLibrary />
-        <div className='main'>
-          <Navbar />
-            <Routes>
+    <CurrPlayingItemContext.Provider value={{currPlayingAlbum, setCurrPlayingAlbum, currPlayingSong, setCurrPlayingSong}}>
+      <Router>
+        <div className="app">
+          <div className='app-wrapper'>
+            <NavBox />
+            <YourLibrary />
+            <div className='main'>
+              <Navbar />
+              <Routes>
                 <Route exact path = "/" element = { <Home albums = {albums} /> }/>
                 <Route exact path = "/album/:id" element = { <AlbumDetails albums = {albums} /> }/>
-            </Routes>
-          <Footer />
+              </Routes>
+              <Footer />
+            </div>
+            <NowPlaying/>
+          </div>
         </div>
-        {/* <NowPlaying /> */}
-        <NowPlaying
-          album = {albums[0]}
-          song = {albums[0].songs[0]}
-        />
-        {/* temporarily for testing */}
-      </div>
-    </div>
-    </Router>
+      </Router>
+    </CurrPlayingItemContext.Provider>
   );
 }
 

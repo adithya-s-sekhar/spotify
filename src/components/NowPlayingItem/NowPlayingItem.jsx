@@ -1,6 +1,8 @@
 import './NowPlayingItem.css';
 
-const NowPlayingItem = ({song, album}) => {
+const NowPlayingItem = (props) => {
+    const album = props.item.currPlayingAlbum;
+    const song = props.item.currPlayingSong;
 
     return ( 
         <div className="np-item">
