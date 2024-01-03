@@ -1,8 +1,10 @@
 import './Home.css';
 import AlbumRow from '../AlbumRow/AlbumRow';
+import { useContext } from 'react';
+import { AlbumContext } from '../../contexts/AlbumContext';
 
-const Home = (props) => {
-    const albums = props.albums;
+const Home = () => {
+    const albums = (useContext(AlbumContext).albums);
     const recentlyPlayed = albums.filter((album) => album.recent === true);
 
     return ( 

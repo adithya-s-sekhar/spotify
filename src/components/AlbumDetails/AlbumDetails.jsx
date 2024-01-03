@@ -3,11 +3,14 @@ import './AlbumDetails.css';
 import AlbumSong from '../AlbumSong/AlbumSong';
 import { useContext } from "react";
 import { CurrPlayingItemContext } from "../../contexts/CurrPlayingItemContext";
+import { AlbumContext } from "../../contexts/AlbumContext";
 
-const AlbumDetails = (props) => {
+const AlbumDetails = () => {
     const { id } = useParams();
     const numericId = Number(id);
-    const album = props.albums.find(({ id }) => id == numericId);
+    
+    const albums = (useContext(AlbumContext).albums);
+    const album = albums.find(({ id }) => id == numericId);
 
     const currPlayingItem = useContext(CurrPlayingItemContext);
 

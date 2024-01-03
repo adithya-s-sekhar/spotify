@@ -10,6 +10,7 @@ import { albums } from './albums';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import { CurrPlayingItemContext } from './contexts/CurrPlayingItemContext';
+import { AlbumContext } from './contexts/AlbumContext';
 
 function App() {
   const initAlbum = albums[0];
@@ -23,7 +24,8 @@ function App() {
   isPlaying ? currTrack.play() : currTrack.pause();
   
   return (
-    <CurrPlayingItemContext.Provider value={{
+    <AlbumContext.Provider value={{albums}}>
+      <CurrPlayingItemContext.Provider value={{
       currPlayingAlbum, setCurrPlayingAlbum, 
       currPlayingSong, setCurrPlayingSong,
       isPlaying, setIsPlaying,
@@ -36,8 +38,8 @@ function App() {
             <div className='main'>
               <Navbar />
               <Routes>
-                <Route exact path = "/" element = { <Home albums = {albums} /> }/>
-                <Route exact path = "/album/:id" element = { <AlbumDetails albums = {albums} /> }/>
+                <Route exact path = "/" element = { <Home/> }/>
+                <Route exact path = "/album/:id" element = { <AlbumDetails/> }/>
               </Routes>
               <Footer />
             </div>
@@ -46,6 +48,7 @@ function App() {
         </div>
       </Router>
     </CurrPlayingItemContext.Provider>
+    </AlbumContext.Provider>
   );
 }
 
