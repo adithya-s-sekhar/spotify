@@ -10,6 +10,7 @@
     width: 56px;
     height: 56px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 .np-item-art img{
@@ -37,6 +38,7 @@
 .np-item-heart{
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 .np-item-heart svg{

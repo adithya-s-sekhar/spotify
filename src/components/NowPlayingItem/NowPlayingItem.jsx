@@ -1,12 +1,15 @@
+import { useNavigate } from 'react-router-dom';
 import './NowPlayingItem.css';
 
 const NowPlayingItem = (props) => {
+    const navigate = useNavigate();
+
     const album = props.item.currPlayingAlbum;
     const song = props.item.currPlayingSong;
 
     return ( 
         <div className="np-item">
-            <div className="np-item-art">
+            <div className="np-item-art" onClick={() => navigate("/album/"+props.item.currPlayingAlbum.id)}>
                 <img src={album.art} className='np-item-art-img'/>
             </div>
             <div className="np-item-details">
