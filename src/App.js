@@ -19,6 +19,9 @@ function App() {
   const [currPlayingSong, setCurrPlayingSong] = useState(initSong);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(new Audio(initSong.songFile));
+  const [currentDur, setCurrentDur] = useState(0);
+  const [duration, setDuration] = useState(0);
+
 
   useEffect(() => {
     const updateAudioPlayer = () => {
@@ -30,12 +33,22 @@ function App() {
     };
 
     audioRef.current.src = currPlayingSong.songFile;
-    audioRef.current.addEventListener('loadedmetadata', updateAudioPlayer);
+    audioRef.current.addEventListener('loadedmetadata',() => {
+      setDuration(audioRef.current.duration);
+      updateAudioPlayer();
+    });
+
+    audioRef.current.addEventListener('timeupdate', () => {
+      setCurrentDur(audioRef.current.currentTime);
+    });
 
     return () => {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
       audioRef.current.removeEventListener('loadedmetadata', updateAudioPlayer);
+      audioRef.current.removeEventListener('timeupdate', () => {
+        setCurrentDur(audioRef.current.currentTime);
+      });
     };
   }, [isPlaying, currPlayingSong]);
   
@@ -45,6 +58,7 @@ function App() {
       currPlayingAlbum, setCurrPlayingAlbum, 
       currPlayingSong, setCurrPlayingSong,
       isPlaying, setIsPlaying,
+      currentDur, duration
       }}>
       <Router>
         <div className="app">

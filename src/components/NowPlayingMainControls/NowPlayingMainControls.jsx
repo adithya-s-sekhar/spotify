@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import './NowPlayingMainControls.css';
 import { CurrPlayingItemContext } from '../../contexts/CurrPlayingItemContext';
 
@@ -12,6 +12,26 @@ const NowPlayingMainControls = () => {
             currPlayingItem.setIsPlaying(true);
         }
     }
+
+    const formatTime = (x) => {
+        const min = Math.floor(x / 60);
+        const sec = Math.floor(x % 60);
+
+        const formattedMin = min < 10 ? `0${min}` : min;
+        const formattedSec = sec < 10 ? `0${sec}` : sec;
+
+        return(
+            `${formattedMin}:${formattedSec}`
+        )
+    }
+
+    useEffect(() => {
+        const width = (currPlayingItem.currentDur / currPlayingItem.duration) * 100;
+        const progressBarFg = document.getElementsByClassName('np-progress-bar-fg')[0];
+        if (progressBarFg) {
+            progressBarFg.style.width = `${width}%`;
+        }
+    }, [currPlayingItem.currentDur]);
 
     return ( 
         <div className="np-main-controls">
@@ -27,15 +47,14 @@ const NowPlayingMainControls = () => {
             </div>
             <div className="np-progress">
                 <div className="np-curr-dur">
-                    00:00
+                {currPlayingItem.isPlaying && formatTime(currPlayingItem.currentDur)}
                 </div>
                 <div className="np-progress-bar">
                     <div className="np-progress-bar-fg">
-
                     </div>
                 </div>
                 <div className="np-total-dur">
-                    00:00
+                    {currPlayingItem.isPlaying && formatTime(currPlayingItem.duration)}
                 </div>
             </div>
         </div>
