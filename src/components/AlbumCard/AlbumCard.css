@@ -40,6 +40,20 @@
     box-shadow: 7px 7px 14px 3px rgba(0,0,0,1);;
 }
 
+.album-card-art svg:hover{
+    transform: scale(1.04);
+    background-color: #22e367;
+    transition-property: transform, background-color;
+    transition-duration: .1s;
+}
+
+.album-card-art svg:not(:hover){
+    transform: scale(1);
+    background-color: #1ed760;
+    transition-property: transform, background-color;
+    transition-duration: .1s;
+}
+
 .album-card:hover > .album-card-art svg{
     bottom: 8%;
     opacity: 1;
