@@ -10,7 +10,7 @@ const AlbumDetails = () => {
     const numericId = Number(id);
     
     const albums = (useContext(AlbumContext).albums);
-    const album = albums.find(({ id }) => id == numericId);
+    const album = albums.find(({ id }) => id === numericId);
 
     const currPlayingItem = useContext(CurrPlayingItemContext);
 
