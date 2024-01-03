@@ -39,6 +39,7 @@
     position: absolute;
     right: 7%;
     box-shadow: 7px 7px 14px 3px rgba(0,0,0,1);;
+    cursor: pointer;
 }
 
 .album-card-art svg:hover{
