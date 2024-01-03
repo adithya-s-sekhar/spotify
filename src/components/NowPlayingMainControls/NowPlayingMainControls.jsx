@@ -30,9 +30,6 @@ const NowPlayingMainControls = () => {
                     00:00
                 </div>
                 <div className="np-progress-bar">
-                    <div className="np-progress-bar-bg">
-
-                    </div>
                     <div className="np-progress-bar-fg">
 
                     </div>

@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 8px;
     height: 100%;
+    width: 50%;
 }
 
 .np-playback-controls{
@@ -18,6 +19,17 @@
     width: 16px;
     height: 16px;
     fill: #a7a7a7;
+    cursor: pointer;
+}
+
+.np-playback-controls svg:hover{
+    scale: 1.04;
+    transition: scale .1s;
+}
+
+.np-playback-controls svg:not(:hover){
+    scale: 1;
+    transition: scale .1s;
 }
 
 .np-playback-controls svg.play-pause-button{
@@ -27,4 +39,31 @@
     padding: 6px;
     border-radius: 50%;
     background-color: #fff;
+}
+
+.np-progress{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.np-progress-bar{
+    display: flex;
+    height: 6px;
+    background-color: #a7a7a7;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.np-progress-bar-fg{
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.np-progress-bar:hover .np-progress-bar-fg{
+    background-color: #1ed760;
 }
