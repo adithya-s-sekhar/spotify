@@ -8,7 +8,7 @@ import Home from './components/Home/Home';
 import AlbumDetails from './components/AlbumDetails/AlbumDetails';
 import { albums } from './albums';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { CurrPlayingItemContext } from './contexts/CurrPlayingItemContext';
 
 function App() {
