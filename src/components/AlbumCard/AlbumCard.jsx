@@ -3,9 +3,7 @@ import './AlbumCard.css';
 import { useContext } from 'react';
 import { CurrPlayingItemContext } from '../../contexts/CurrPlayingItemContext';
 
-const AlbumCard = (props) => {
-    const album = props.album;
-
+const AlbumCard = ({album}) => {
     const currPlayingItem = useContext(CurrPlayingItemContext);
 
     function playAlbum() {
