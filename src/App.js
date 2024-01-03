@@ -8,7 +8,7 @@ import Home from './components/Home/Home';
 import AlbumDetails from './components/AlbumDetails/AlbumDetails';
 import { albums } from './albums';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { CurrPlayingItemContext } from './contexts/CurrPlayingItemContext';
 import { AlbumContext } from './contexts/AlbumContext';
 
@@ -18,26 +18,24 @@ function App() {
   const [currPlayingAlbum, setCurrPlayingAlbum] = useState(initAlbum);
   const [currPlayingSong, setCurrPlayingSong] = useState(initSong);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [currTrack, setCurrTrack] = useState(() => new Audio(initSong.songFile));
+  const audioRef = useRef(new Audio(initSong.songFile));
 
   useEffect(() => {
-    const audioRef = currTrack;
-  
     const updateAudioPlayer = () => {
       if (isPlaying) {
-        audioRef.play();
+        audioRef.current.play();
       } else {
-        audioRef.pause();
+        audioRef.current.pause();
       }
     };
 
-    audioRef.src = currPlayingSong.songFile;
-    audioRef.addEventListener('loadedmetadata', updateAudioPlayer);
+    audioRef.current.src = currPlayingSong.songFile;
+    audioRef.current.addEventListener('loadedmetadata', updateAudioPlayer);
 
     return () => {
-      audioRef.pause();
-      audioRef.currentTime = 0;
-      audioRef.removeEventListener('loadedmetadata', updateAudioPlayer);
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      audioRef.current.removeEventListener('loadedmetadata', updateAudioPlayer);
     };
   }, [isPlaying, currPlayingSong]);
   
