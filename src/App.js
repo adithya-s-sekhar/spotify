@@ -8,7 +8,7 @@ import Home from './components/Home/Home';
 import AlbumDetails from './components/AlbumDetails/AlbumDetails';
 import { albums } from './albums';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CurrPlayingItemContext } from './contexts/CurrPlayingItemContext';
 import { AlbumContext } from './contexts/AlbumContext';
 
@@ -18,10 +18,28 @@ function App() {
   const [currPlayingAlbum, setCurrPlayingAlbum] = useState(initAlbum);
   const [currPlayingSong, setCurrPlayingSong] = useState(initSong);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [currTrack, setCurrTrack] = useState(() => new Audio(initSong.songFile));
 
-  const currTrack = new Audio(currPlayingSong.songFile);
+  useEffect(() => {
+    const audioRef = currTrack;
+  
+    const updateAudioPlayer = () => {
+      if (isPlaying) {
+        audioRef.play();
+      } else {
+        audioRef.pause();
+      }
+    };
 
-  isPlaying ? currTrack.play() : currTrack.pause();
+    audioRef.src = currPlayingSong.songFile;
+    audioRef.addEventListener('loadedmetadata', updateAudioPlayer);
+
+    return () => {
+      audioRef.pause();
+      audioRef.currentTime = 0;
+      audioRef.removeEventListener('loadedmetadata', updateAudioPlayer);
+    };
+  }, [isPlaying, currPlayingSong]);
   
   return (
     <AlbumContext.Provider value={{albums}}>
