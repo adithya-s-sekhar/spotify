@@ -9,24 +9,28 @@ export const albums = [
         year: '2014',
         songs: [
             {
+                songIndex: 1,
                 songTitle: 'Song 1',
                 songFile: '/sample.mp3',
                 songArtist: 'Singer 1, Singer 2',
                 songDur: '5m'
             },
             {
+                songIndex: 2,
                 songTitle: 'Song 2',
                 songFile: '/sample2.mp3',
                 songArtist: 'Singer 2, Singer 3',
                 songDur: '4m'
             },
             {
+                songIndex: 3,
                 songTitle: 'Song 3',
                 songFile: '/sample3.mp3',
                 songArtist: 'Singer 3, Singer 4',
                 songDur: '5m'
             },
             {
+                songIndex: 4,
                 songTitle: 'Song 4',
                 songFile: '/sample4.mp3',
                 songArtist: 'Singer 4, Singer 5',
@@ -47,25 +51,29 @@ export const albums = [
         year: '2014',
         songs: [
             {
-                songTitle: 'Song 5',
+                songIndex: 1,
+                songTitle: 'Song 1',
                 songFile: '/sample.mp3',
                 songArtist: 'Singer 5, Singer 6',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 6',
+                songIndex: 2,
+                songTitle: 'Song 2',
                 songFile: '/sample2.mp3',
                 songArtist: 'Singer 6, Singer 7',
                 songDur: '4m'
             },
             {
-                songTitle: 'Song 7',
+                songIndex: 3,
+                songTitle: 'Song 3',
                 songFile: '/sample3.mp3',
                 songArtist: 'Singer 7, Singer 8',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 8',
+                songIndex: 4,
+                songTitle: 'Song 4',
                 songFile: '/sample4.mp3',
                 songArtist: 'Singer 8, Singer 9',
                 songDur: '3m'
@@ -85,25 +93,29 @@ export const albums = [
         year: '2014',
         songs: [
             {
-                songTitle: 'Song 9',
+                songIndex: 1,
+                songTitle: 'Song 1',
                 songFile: '/sample.mp3',
                 songArtist: 'Singer 9, Singer 10',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 10',
+                songIndex: 2,
+                songTitle: 'Song 2',
                 songFile: '/sample2.mp3',
                 songArtist: 'Singer 10, Singer 11',
                 songDur: '4m'
             },
             {
-                songTitle: 'Song 11',
+                songIndex: 3,
+                songTitle: 'Song 3',
                 songFile: '/sample3.mp3',
                 songArtist: 'Singer 11, Singer 12',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 12',
+                songIndex: 4,
+                songTitle: 'Song 4',
                 songFile: '/sample4.mp3',
                 songArtist: 'Singer 12, Singer 13',
                 songDur: '3m'
@@ -122,25 +134,29 @@ export const albums = [
         year: '2014',
         songs: [
             {
-                songTitle: 'Song 13',
+                songIndex: 1,
+                songTitle: 'Song 1',
                 songFile: '/sample.mp3',
                 songArtist: 'Singer 13, Singer 14',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 14',
+                songIndex: 2,
+                songTitle: 'Song 2',
                 songFile: '/sample2.mp3',
                 songArtist: 'Singer 14, Singer 15',
                 songDur: '4m'
             },
             {
-                songTitle: 'Song 15',
+                songIndex: 3,
+                songTitle: 'Song 3',
                 songFile: '/sample3.mp3',
                 songArtist: 'Singer 15, Singer 16',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 16',
+                songIndex: 4,
+                songTitle: 'Song 4',
                 songFile: '/sample4.mp3',
                 songArtist: 'Singer 16, Singer 17',
                 songDur: '3m'
@@ -159,25 +175,29 @@ export const albums = [
         year: '2014',
         songs: [
             {
-                songTitle: 'Song 17',
+                songIndex: 1,
+                songTitle: 'Song 1',
                 songFile: '/sample.mp3',
                 songArtist: 'Singer 17, Singer 18',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 18',
+                songIndex: 2,
+                songTitle: 'Song 2',
                 songFile: '/sample2.mp3',
                 songArtist: 'Singer 18, Singer 19',
                 songDur: '4m'
             },
             {
-                songTitle: 'Song 19',
+                songIndex: 3,
+                songTitle: 'Song 3',
                 songFile: '/sample3.mp3',
                 songArtist: 'Singer 19, Singer 20',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 20',
+                songIndex: 4,
+                songTitle: 'Song 4',
                 songFile: '/sample4.mp3',
                 songArtist: 'Singer 20, Singer 21',
                 songDur: '3m'
@@ -196,25 +216,29 @@ export const albums = [
         year: '2014',
         songs: [
             {
-                songTitle: 'Song 21',
+                songIndex: 1,
+                songTitle: 'Song 1',
                 songFile: '/sample.mp3',
                 songArtist: 'Singer 21, Singer 22',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 22',
+                songIndex: 2,
+                songTitle: 'Song 2',
                 songFile: '/sample2.mp3',
                 songArtist: 'Singer 22, Singer 23',
                 songDur: '4m'
             },
             {
-                songTitle: 'Song 23',
+                songIndex: 3,
+                songTitle: 'Song 3',
                 songFile: '/sample3.mp3',
                 songArtist: 'Singer 23, Singer 24',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 24',
+                songIndex: 4,
+                songTitle: 'Song 4',
                 songFile: '/sample4.mp3',
                 songArtist: 'Singer 24, Singer 25',
                 songDur: '3m'
@@ -233,25 +257,29 @@ export const albums = [
         year: '2014',
         songs: [
             {
-                songTitle: 'Song 25',
+                songIndex: 1,
+                songTitle: 'Song 1',
                 songFile: '/sample.mp3',
                 songArtist: 'Singer 25, Singer 26',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 26',
+                songIndex: 2,
+                songTitle: 'Song 2',
                 songFile: '/sample2.mp3',
                 songArtist: 'Singer 26, Singer 27',
                 songDur: '4m'
             },
             {
-                songTitle: 'Song 27',
+                songIndex: 3,
+                songTitle: 'Song 3',
                 songFile: '/sample3.mp3',
                 songArtist: 'Singer 27, Singer 28',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 28',
+                songIndex: 4,
+                songTitle: 'Song 4',
                 songFile: '/sample4.mp3',
                 songArtist: 'Singer 28, Singer 29',
                 songDur: '3m'
@@ -270,25 +298,29 @@ export const albums = [
         year: '2014',
         songs: [
             {
-                songTitle: 'Song 29',
+                songIndex: 1,
+                songTitle: 'Song 1',
                 songFile: '/sample.mp3',
                 songArtist: 'Singer 29, Singer 30',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 30',
+                songIndex: 2,
+                songTitle: 'Song 2',
                 songFile: '/sample2.mp3',
                 songArtist: 'Singer 30, Singer 31',
                 songDur: '4m'
             },
             {
-                songTitle: 'Song 31',
+                songIndex: 3,
+                songTitle: 'Song 3',
                 songFile: '/sample3.mp3',
                 songArtist: 'Singer 31, Singer 32',
                 songDur: '5m'
             },
             {
-                songTitle: 'Song 32',
+                songIndex: 4,
+                songTitle: 'Song 4',
                 songFile: '/sample4.mp3',
                 songArtist: 'Singer 32, Singer 33',
                 songDur: '3m'

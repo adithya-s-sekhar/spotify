@@ -24,12 +24,16 @@
 
 .np-playback-controls svg:hover{
     scale: 1.04;
-    transition: scale .1s;
+    fill: #fff;
+    transition-property: scale, fill;
+    transition-duration: .1s;
 }
 
 .np-playback-controls svg:not(:hover){
     scale: 1;
-    transition: scale .1s;
+    fill: #a7a7a7;
+    transition-property: scale, fill;
+    transition-duration:  .1s;
 }
 
 .np-playback-controls svg.play-pause-button{
