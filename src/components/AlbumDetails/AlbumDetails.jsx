@@ -26,7 +26,7 @@ const AlbumDetails = () => {
     }
 
     function togglePlay(){
-        if (currPlayingItem.isPlaying){
+        if (currPlayingItem.isPlaying && currPlayingItem.currPlayingAlbum === album){
             pauseAlbum();
         } else {
             playAlbum();
