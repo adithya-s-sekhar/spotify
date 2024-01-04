@@ -12,10 +12,13 @@ const AlbumSong = ({index, songTitle, songArtist, songDur, album}) => {
         currPlayingItem.setCurrPlayingAlbum(album);
         currPlayingItem.setCurrPlayingSong(album.songs[index]);
         currPlayingItem.setIsPlaying(true);
-        if ((index+1) == currPlayingItem.currPlayingSong.songIndex){
-            let element = document.getElementsByClassName('song'+(index+1))[0];
-            element.classList.add("album-body-song-active");
+        if (album === currPlayingItem.currPlayingAlbum){
+            if ((index+1) === currPlayingItem.currPlayingSong.songIndex){
+                let element = document.getElementsByClassName('song'+(index+1))[0];
+                element.classList.add("album-body-song-active");
+            }
         }
+        
     }
 
     function pauseSong() {  
@@ -35,9 +38,11 @@ const AlbumSong = ({index, songTitle, songArtist, songDur, album}) => {
     }
 
     useEffect(() => {
-        if ((index+1) == currPlayingItem.currPlayingSong.songIndex){
-            let element = document.getElementsByClassName('song'+(index+1))[0];
-            element.classList.add("album-body-song-active");
+        if (album === currPlayingItem.currPlayingAlbum) {
+            if ((index+1) === currPlayingItem.currPlayingSong.songIndex){
+                let element = document.getElementsByClassName('song'+(index+1))[0];
+                element.classList.add("album-body-song-active");
+            }
         }
     },[currPlayingItem.currPlayingSong])
 
