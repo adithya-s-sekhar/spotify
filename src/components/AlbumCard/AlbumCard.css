@@ -57,8 +57,8 @@
 }
 
 .album-card:hover > .album-card-art svg{
-    bottom: 8%;
-    opacity: 1;
+    bottom: 8% !important;
+    opacity: 1  !important;
     transition-property: opacity, bottom;
     transition-duration: .3s;
 }
