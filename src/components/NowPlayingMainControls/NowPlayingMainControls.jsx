@@ -45,6 +45,12 @@ const NowPlayingMainControls = () => {
         progressBarFg.style.width = `${width}%`;
     }
 
+    useEffect(() => {
+        if (currPlayingItem.currentDur === currPlayingItem.duration){
+            nextTrack();
+        }
+    },[currPlayingItem.currentDur])
+
     return ( 
         <div className="np-main-controls">
             <div className="np-playback-controls">
