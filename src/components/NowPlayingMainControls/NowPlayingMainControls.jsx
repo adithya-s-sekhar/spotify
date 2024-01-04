@@ -39,13 +39,11 @@ const NowPlayingMainControls = () => {
         currPlayingItem.setCurrPlayingSong(nextSong);
     }
 
-    useEffect(() => {
-        const width = (currPlayingItem.currentDur / currPlayingItem.duration) * 100;
-        const progressBarFg = document.getElementsByClassName('np-progress-bar-fg')[0];
-        if (progressBarFg) {
-            progressBarFg.style.width = `${width}%`;
-        }
-    }, [currPlayingItem.currentDur]);
+    const width = (currPlayingItem.currentDur / currPlayingItem.duration) * 100;
+    const progressBarFg = document.getElementsByClassName('np-progress-bar-fg')[0];
+    if (progressBarFg) {
+        progressBarFg.style.width = `${width}%`;
+    }
 
     return ( 
         <div className="np-main-controls">
