@@ -5,7 +5,6 @@
     justify-content: center;
     gap: 8px;
     height: 100%;
-    width: 50%;
 }
 
 .np-playback-controls{
@@ -54,21 +53,11 @@
 
 .np-progress-bar{
     display: flex;
-    height: 3px;
-    background-color: #a7a7a7;
+    height: 4px;
+    background-color: #555;
     width: 100%;
     border-radius: 20px;
     cursor: pointer;
-}
-
-.np-progress-bar:hover{
-    height: 6px;
-    transition: height .1s;
-}
-
-.np-progress-bar:not(:hover){
-    height: 3px;
-    transition: height .1s;
 }
 
 .np-progress-bar-fg{
@@ -78,18 +67,8 @@
     border-radius: 20px;
 }
 
-.np-progress-bar:hover{
-    background-color: #777;
-    transition: background-color, .1s;
-}
-
 .np-progress-bar:hover .np-progress-bar-fg{
-    background-color: #1ed760;
-    transition: background-color, .1s;
-}
-
-.np-progress-bar:not(:hover){
-    background-color: #a7a7a7;
+    background-color: #1DB954;
     transition: background-color, .1s;
 }
 
