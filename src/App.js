@@ -45,7 +45,9 @@ function App() {
     //   setCurrentDur(audioRef.current.currentTime);
     // });
 
-    audioRef.current.addEventListener('timeupdate', setCurrentDur(audioRef.current.currentTime));
+    audioRef.current.addEventListener('timeupdate', () => {setCurrentDur(audioRef.current.currentTime)});
+
+    // audioRef.current.addEventListener('timeupdate', console.log('event'));
 
     return () => {
       audioRef.current.pause();
