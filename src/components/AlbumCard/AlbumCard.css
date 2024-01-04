@@ -14,7 +14,14 @@
 
 .album-card:hover{
     background-color: #242424;
-    transition: background-color .3s;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.album-card:not(:hover){
+    background-color: #181818;
+    transition-property: background-color;
+    transition-duration: .3s;
 }
 
 .album-card-art{

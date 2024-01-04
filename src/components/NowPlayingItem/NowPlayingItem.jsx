@@ -1,14 +1,21 @@
 import { useNavigate } from 'react-router-dom';
 import './NowPlayingItem.css';
+import { useContext } from 'react';
+import { CurrPlayingItemContext } from '../../contexts/CurrPlayingItemContext';
 
 const NowPlayingItem = (props) => {
+    const currPlayingItem = useContext(CurrPlayingItemContext);
     const navigate = useNavigate();
 
     const album = props.item.currPlayingAlbum;
     const song = props.item.currPlayingSong;
 
     return ( 
-        <div className="np-item">
+        <div className="np-item"
+            style={{
+                opacity: currPlayingItem.isPlaying ? '1' : '.7'
+            }}
+        >
             <div className="np-item-art" onClick={() => navigate("/album/"+props.item.currPlayingAlbum.id)}>
                 <img src={album.art} className='np-item-art-img'/>
             </div>

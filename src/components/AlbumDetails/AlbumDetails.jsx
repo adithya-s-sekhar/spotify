@@ -59,7 +59,13 @@ const AlbumDetails = () => {
             <div className="album-body">
                 <div className="album-body-controls">
                     <div className="album-body-controls-left">
-                        <div className="album-body-controls-play" onClick={togglePlay}>
+                        <div className="album-body-controls-play" 
+                            onClick={togglePlay}
+                            style={{
+                                transform: currPlayingItem.isPlaying ? 'scale(1.04)' : 'scale(1)',
+                                backgroundColor: currPlayingItem.isPlaying ? '#22e367' : '#1ed760'
+                            }}
+                        >
                             <svg viewBox="0 0 24 24">
                                 {!currPlayingItem.isPlaying | currPlayingItem.currPlayingAlbum !== album && <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z"></path>}
                                 {currPlayingItem.isPlaying && currPlayingItem.currPlayingAlbum === album && <path d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"></path>}
@@ -90,7 +96,12 @@ const AlbumDetails = () => {
                             <svg viewBox="0 0 16 16"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path><path d="M8 3.25a.75.75 0 0 1 .75.75v3.25H11a.75.75 0 0 1 0 1.5H7.25V4A.75.75 0 0 1 8 3.25z"></path></svg>
                         </div>
                     </div>
-                    <div className="album-body-songs-list">
+                    <div 
+                        className="album-body-songs-list"
+                        style={{
+                            opacity: currPlayingItem.isPlaying ? '1' : '.7'
+                        }}
+                    >
                         {album.songs.map((song, index) => (
                             <AlbumSong
                                 key={index}
