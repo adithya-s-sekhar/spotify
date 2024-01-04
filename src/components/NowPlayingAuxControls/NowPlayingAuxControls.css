@@ -1,7 +1,51 @@
 .np-aux-controls{
     height: 100%;
-    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 100px;
+    gap: 20px;
+}
+
+.np-aux-controls svg{
+    width: 48px;
+    height: 48px;
+    fill: #a7a7a7;
+    cursor: pointer;
+}
+
+.np-aux-controls svg:hover{
+    fill: #fff;
+    transition: fill .1s;
+}
+
+.np-aux-controls svg:not(:hover){
+    fill: #a7a7a7;
+    transition: fill .1s;
+}
+
+.np-vol-bar{
+    display: flex;
+    height: 4px;
+    background-color: #555;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.np-vol-bar-fg{
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.np-vol-bar:hover .np-vol-bar-fg{
+    background-color: #1DB954;
+    transition: background-color, .1s;
+}
+
+.np-vol-bar:not(:hover) .np-vol-bar-fg{
+    background-color: #fff;
+    transition: background-color, .1s;
 }
