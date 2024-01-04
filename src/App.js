@@ -26,6 +26,7 @@ function App() {
   useEffect(() => {
     const updateAudioPlayer = () => {
       if (isPlaying) {
+        setDuration(audioRef.current.duration)
         audioRef.current.play();
       } else {
         audioRef.current.pause();
@@ -33,22 +34,27 @@ function App() {
     };
 
     audioRef.current.src = currPlayingSong.songFile;
-    audioRef.current.addEventListener('loadedmetadata',() => {
-      setDuration(audioRef.current.duration);
-      updateAudioPlayer();
-    });
+    // audioRef.current.addEventListener('loadedmetadata',() => {
+    //   setDuration(audioRef.current.duration);
+    //   updateAudioPlayer();
+    // });
+    // audioRef.current.addEventListener('loadedmetadata', );
+    audioRef.current.addEventListener('loadedmetadata', updateAudioPlayer);
 
-    audioRef.current.addEventListener('timeupdate', () => {
-      setCurrentDur(audioRef.current.currentTime);
-    });
+    // audioRef.current.addEventListener('timeupdate', () => {
+    //   setCurrentDur(audioRef.current.currentTime);
+    // });
+
+    audioRef.current.addEventListener('timeupdate', setCurrentDur(audioRef.current.currentTime));
 
     return () => {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
       audioRef.current.removeEventListener('loadedmetadata', updateAudioPlayer);
-      audioRef.current.removeEventListener('timeupdate', () => {
-        setCurrentDur(audioRef.current.currentTime);
-      });
+      // audioRef.current.removeEventListener('timeupdate', () => {
+      //   setCurrentDur(audioRef.current.currentTime);
+      // });
+      audioRef.current.removeEventListener('timeupdate', setCurrentDur(audioRef.current.currentTime));
     };
   }, [isPlaying, currPlayingSong]);
   
