@@ -28,12 +28,14 @@ const AlbumSong = ({index, songTitle, songArtist, songDur, album}) => {
         }
     }
 
-    let element = document.getElementById(index+1);
-    if (currPlayingItem.currPlayingAlbum === album && currPlayingItem.currPlayingSong.songIndex === (index + 1)){
-        element.classList.add('album-body-song-active');
-    } else {
-        element.classList.remove('album-body-song-active');
-    }
+    useEffect(() => {
+        let element = document.getElementById(index+1);
+        if (currPlayingItem.currPlayingAlbum === album && currPlayingItem.currPlayingSong.songIndex === (index + 1)){
+            element.classList.add('album-body-song-active');
+        } else {
+            element.classList.remove('album-body-song-active');
+        }
+    },[currPlayingItem.currPlayingSong]);
 
     return (
         <div className="album-body-song" id={index+1} onClick={togglePlay}>
