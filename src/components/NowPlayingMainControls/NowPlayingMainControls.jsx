@@ -27,16 +27,25 @@ const NowPlayingMainControls = () => {
 
     const prevTrack = () => {
         let newIndex = currPlayingItem.currPlayingSong.songIndex - 1;
-        if (!newIndex > 0) { return }; 
-        const prevSong = currPlayingItem.currPlayingAlbum.songs.find(({ songIndex }) => songIndex === newIndex);
-        currPlayingItem.setCurrPlayingSong(prevSong);
+        if (!newIndex > 0) {
+            const prevSongIndex = (currPlayingItem.currPlayingAlbum.songs.length - 1);
+            const prevSong = currPlayingItem.currPlayingAlbum.songs[prevSongIndex];
+            currPlayingItem.setCurrPlayingSong(prevSong);
+        } else {
+            const prevSong = currPlayingItem.currPlayingAlbum.songs.find(({ songIndex }) => songIndex === newIndex);
+            currPlayingItem.setCurrPlayingSong(prevSong);
+        }
     }
 
     const nextTrack = () => {
         let newIndex = currPlayingItem.currPlayingSong.songIndex + 1;
-        if (newIndex > currPlayingItem.currPlayingAlbum.songs.length) { return }; 
-        const nextSong = currPlayingItem.currPlayingAlbum.songs.find(({ songIndex }) => songIndex === newIndex);
-        currPlayingItem.setCurrPlayingSong(nextSong);
+        if (newIndex > currPlayingItem.currPlayingAlbum.songs.length) {
+            const nextSong = currPlayingItem.currPlayingAlbum.songs[0];
+            currPlayingItem.setCurrPlayingSong(nextSong);
+        } else {
+            const nextSong = currPlayingItem.currPlayingAlbum.songs.find(({ songIndex }) => songIndex === newIndex);
+            currPlayingItem.setCurrPlayingSong(nextSong);
+        }
     }
 
     const width = (currPlayingItem.currentDur / currPlayingItem.duration) * 100;
