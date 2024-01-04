@@ -10,16 +10,19 @@
 
 .album-body-song:hover{
     background-color: rgba(128, 128, 128, .3);
-    transform: scale(1.01);
-    transition-property: background-color, color, transform;
+    transition-property: background-color, transform;
     transition-duration: .2s;
 }
 
 .album-body-song:not(:hover){
     background: none;
-    transform: scale(1);
-    transition-property: background-color, color, transform;
+    transition-property: background-color, transform;
     transition-duration: .1s;
+}
+
+.album-body-song-active{
+    background-color: rgba(128, 128, 128, .5) !important;
+    transform: scale(1.01) !important;
 }
 
 .album-body-song-index{
