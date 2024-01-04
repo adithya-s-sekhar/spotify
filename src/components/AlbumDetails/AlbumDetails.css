@@ -123,7 +123,7 @@
 
 .album-body-controls-play:hover{
     transform: scale(1.04) !important;
-    background-color: #22e367;
+    background-color: #22e367 !important;
     transition-property: transform, background-color;
     transition-duration: .1s;
 }
