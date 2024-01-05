@@ -18,10 +18,14 @@ const AlbumSong = ({index, songTitle, songArtist, songDur, album}) => {
 
     function togglePlay(){
         if (currPlayingItem.isPlaying){
-            if (currPlayingItem.currPlayingSong.songIndex === (index + 1)){
-                pauseSong();
-            } else {
+            if (currPlayingItem.currPlayingAlbum !== album){
                 playSong();
+            } else {
+                if (currPlayingItem.currPlayingSong.songIndex === (index + 1)){
+                    pauseSong();
+                } else {
+                    playSong();
+                }
             }
         } else {
             playSong();
