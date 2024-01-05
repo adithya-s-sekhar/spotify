@@ -62,8 +62,8 @@ const AlbumDetails = () => {
                         <div className="album-body-controls-play" 
                             onClick={togglePlay}
                             style={{
-                                transform: currPlayingItem.isPlaying ? 'scale(1.04)' : 'scale(1)',
-                                backgroundColor: currPlayingItem.isPlaying ? '#22e367' : '#1ed760'
+                                transform: currPlayingItem.isPlaying && currPlayingItem.currPlayingAlbum === album ? 'scale(1.04)' : 'scale(1)',
+                                backgroundColor: currPlayingItem.isPlaying && currPlayingItem.currPlayingAlbum === album ? '#22e367' : '#1ed760'
                             }}
                         >
                             <svg viewBox="0 0 24 24">
@@ -99,7 +99,7 @@ const AlbumDetails = () => {
                     <div 
                         className="album-body-songs-list"
                         style={{
-                            opacity: currPlayingItem.isPlaying ? '1' : '.7'
+                            opacity: currPlayingItem.isPlaying && currPlayingItem.currPlayingAlbum === album ? '1' : '.7'
                         }}
                     >
                         {album.songs.map((song, index) => (
